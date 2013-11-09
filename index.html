@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Home page for some abstract project</title>
+    <link rel="shortcut icon" href="./favicon.png" />
+  </head>
+  <body>
+    <header><h1>Home page for some abstract project</h1></header>
+    <nav>
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#faq">faq</a></li>
+        <li><a href="#contacts">contacts</a></li>
+        <li><a href="#register">register</a></li>
+        <li><a href="#feedback">feedback</a></li>
+      </ul>
+    </nav>
+    <section id="about">
+      <article>
+        <h2>Ruby</h2>
+        <p>Large image to capture attention:<br />
+        <img src="http://www.pcwalls.net/walls/sasha_grey_wallpaper_5-wide.jpg" width="60%">
+        </p>
+        <p>
+        <h3>Философия</h3>
+        Мацумото, фанат объектно-ориентированного программирования, мечтал о языке, более мощном, чем Perl, и более объектно-ориентированном, чем Python. Основное назначение Ruby — создание простых и в то же время понятных программ, где важна не скорость работы программы, а малое время разработки, понятность и простота синтаксиса.<br />
+        Язык следует принципу «наименьшей неожиданности»: программа должна вести себя так, как ожидает программист. Однако в контексте Ruby это означает наименьшее удивление не при знакомстве с языком, а при его основательном изучении. Сам Мацумото утверждает, что целью разработки была минимизация неожиданностей при программировании для него, но после распространения языка он с удивлением узнал, что мышление программистов похоже, и для многих из них принцип «наименьшей неожиданности» совпал с его принципом.
+        Ruby также унаследовал идеологию языка программирования Perl в части предоставления программисту возможностей достижения одного и того же результата несколькими различными способами. Люди различны, и им для свободы необходима возможность выбирать. «Я предпочитаю обеспечить много путей, если это возможно, но поощрять или вести пользователей, чтобы выбрать лучший путь, если это возможно». <br />
+        Одной из основных целей разработки было освобождение программистов от рутинной работы, которую вычислитель может выполнять быстрее и качественнее. Особое внимание, в частности, уделялось будничным рутинным занятиям (обработка текстов, администрирование), и для них язык настроен особенно хорошо. <br />
+        В противовес машинно-ориентированным языкам, работающим быстрее, целью этой разработки был язык, наиболее близкий к человеку. Любая работа с компьютером выполняется людьми и для людей, и необходимо заботиться в первую очередь о затрачиваемых усилиях людей. Язык позволяет максимально быстро и просто для человека выполнить задачу, хотя, возможно, это и потребует дополнительного времени работы компьютера. <br />
+        Принципы программирования и устройства языка иногда выделяются в термин «Путь Ruby» (англ. Ruby Way). Хэл Фултон выделяет такие принципы, как «просто, но не слишком просто», «принцип наименьшего удивления», вторичность скорости работы программы, динамичность, простые строгие правила, выполнение которых не доходит до педантизма, потребность создавать полезные и красивые программы как причина программирования. В целом они не имеют точной формулировки и иногда этот термин используется для критики
+        </p>
+      </article>
+    </section>
+    <section id="faq">
+      <article>
+        <h2>FAQ</h2>
+        <p>
+          <strong>Какие средства для тестирования Ruby приложений существуют?</strong><br />
+          <ul>
+            <li>В стандартной поставке: require 'test/unit' (Test::Unit)</li>
+            <li>Чудо-библиотека для Behaviour Driven Development: <a href="http://rspec.info/">RSpec</a> (и "rspec on rails")</li>
+            <li>Дебаггер ruby-debug.</li>
+            <li>Многообещающий Cucumber (тоже BDD)</li>
+          </ul>
+        </p>
+        <p>
+          <strong>Какие средства разработки на Ruby (и с поддержкой Rails) существуют?</strong><br />
+          <p>Руби имеет такую особенность, что IDE ему обычно не нужна. Некоторые считают, что из-за отсутствия статической типизации, нормальной IDE для него не будет и это не повод для гордости. На самом деле, бывают довольно умные IDE и для Руби, но опять-таки, не всем они нужны.</p>
+          <ul>
+            <li>IDE:
+              <ul>
+                <li>RubyMine − наверное лучшая IDE. Кроме специфических Rails фич поддерживает кучу гемов широко используемых Rails разработчиками типа RSpec, Capistrano, HAML, SASS, LESS, CoffeeScript. Для коммерческого использования стоит $69 в год. 30 дней триала.</li>
+                <li>NetBeans − хорошая IDE, но для нормальной работы нужен быстрый компьютер. По воле Oracle, плагин для Руби и рельсов больше не обновляется.</li>
+                <li>IntelliJ IDEA, с плагином для Ruby. См. п.1. База та же. Стоит от $199 в год. Крайне юзабельна при разработке под JRuby, когда часть когда пишется или переписывается на Java или других JVM языках, типа Scala или Closure.</li>
+                <li>Aptana Studio - Бесплатна, Open Source. IDE на базе Eclipse(со всеми его примуществами и недостатками) поддержка ruby вторична, но в целом работает. Выгодно отличается наличием view с терминалом прямо в IDE. Сахара в виде авторефакторингов для Eclipse based IDE, на удивление мало.</li>
+              </ul>
+            </li>
+            <li>Часто используемые текстовые редакторы:
+              <ul>
+                <li><a href="http://macromates.com/">TextMate</a> (Mac OS X only) - де-факто стандарт Rails тусовки. Стоит $53. 30 дней триала.</li>
+                <li><a href="http://www.sublimetext.com/2">Sublime</a> − Улучшенный и кроссплатформенный клон TextMate, стоит $59, но, а-ля Total Commander, покупки не требует.</li>
+                <li><a href="http://vim.org">Vim</a> + <a href="http://rails.vim.tpope.net/">rais.vim</a> − И этим всё сказано.</li>
+                <li>emacs − см. пункт выше</li>
+                <li><a href="http://www.e-texteditor.com/">E-TextEditor</a> − (почти TextMate для Windows)</li>
+              </ul>
+            </li>
+          </ul>
+          <p>От простых текстовых редакторов они отличаются в первую очередь тем, что у них есть бандлы к разным функциям Руби, Рельсы, РСпека. (Автозаполнение, запуск типичных скриптов.)</p>
+        <p>
+        </p>
+          <strong>Может мне кто-нибудь кинуть ссылку откуда можно скачать "Мега книжку"?</strong><br />
+          <p>Не может. Ищите в гугле. Тут уважают чужой интеллектуальный труд (как бы банально это ни звучало).</p>
+        </p>
+        <p>
+          <strong>Какие книги можете порекомендовать для изучения Ruby, Ruby on Rails?</strong><br />
+          <ul>
+            <li><a href="http://www.pragprog.com/titles/ruby">Programming Ruby (Pickaxe, Кирка)</a>. Библия по языку, хотя и немного устарела. <a href="http://www.ruby-doc.org/docs/ProgrammingRuby/">Первое издание в HTML</a></li>
+            <li><a href="http://pragprog.com/titles/rails2/">Agile Web Development with Rails (AWDwR)</a>. Библия по Рельсе, но устаревает быстрее, чем Кирка. Новичку, тем не менее, все равно будет полезна.</li>
+            <li>Ruby Way, Hal Fulton</li>
+          </ul>
+          <p>Ещё есть разные Ruby Recipes, Rails Cookbook и проч. На английском языке почти все из них съедобны, но второстепенны по отношению к упомянутым.</p>
+          <p>Отдельной строкой: <a href="http://poignantguide.net/ruby/">Why’s (Poignant) Guide to Ruby</a>. Книга — шедевр, но на любителя.</p>
+          <p>Для тех, кто интересуется не только синтаксисом: <a href="http://mitpress.mit.edu/sicp/full-text/book/book.html">Structure and Interpretation of Computer Programs aka "Wizard book"</a>.</p>
+        </p>
+      </article>
+    </section>
+    <section id="contacts">
+      <address>
+        <h2>Our contacts:</h2>
+        e-mail: <a href="mailto:example@gmail.com">example@gmail.com</a>
+        phone: 555-0519
+      </address>  
+    </section>
+    <section id="register">
+       <h2>Sing Up</h2>
+       <form action="register.rb" method="post">
+        <label>E-mail: <input type="email" name="email" /></label><br />
+        <label>Password: <input type="password" name="pwd" /></label><br />
+        <label>Confirm password: <input type="password" name="cpwd" /></label><br />
+        <button type="submit">Sing Up</button>
+      </form>
+    </section>
+    <section id="feedback">
+       <h2>Feedback</h2>
+       <form action="feedback.rb" method="post">
+        <label>Your E-mail: <input type="email" name="email" /></label><br />
+        <label>Your Text<textarea name="msg" cols="30" rows="3"></textarea></label><br />
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <footer>© 2013 Vlad Khristianinov</footer>
+  </body>
+</html>
